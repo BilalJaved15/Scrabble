@@ -1,0 +1,26 @@
+[33mcommit 9940d771ab80d94282cf7b969e72ceeb017b980d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 996b553 1157381
+Author: Muhammad Bilal <68804204+BilalJaved15@users.noreply.github.com>
+Date:   Wed Oct 6 16:59:12 2021 +0500
+
+    Merge pull request #1 from AfaqShuaib09/main
+    
+    images path and file bugs fixed
+
+[33mcommit 1157381459cad008460b89f7eb8448d797156e64[m
+Author: AfaqShoaib <afaq.shoaib09@gmail.com>
+Date:   Wed Oct 6 16:30:05 2021 +0500
+
+    images path and file bugs fixed
+
+[33mcommit 996b55305d63acd8418ea0c4f52bf84e8b0be228[m
+Author: Muhammad Bilal <68804204+emeraldThug@users.noreply.github.com>
+Date:   Thu Jun 24 22:13:15 2021 +0500
+
+    Create README.md
+
+[33mcommit 5eb8530b2837707e028279f668327026e58cc8f5[m
+Author: Muhammad Bilal <bcsf18m029@pucit.edu.pk>
+Date:   Thu Jun 24 22:11:14 2021 +0500
+
+    Added files to repo

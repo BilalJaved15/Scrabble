@@ -441,7 +441,7 @@ public class MatchRoundLogic {
 
     public void recordBoardState() {
         try {
-            File file = new File("boardState.txt");
+            File file = new File("assets/boardState.txt");
             file.delete();
             FileWriter fw = new FileWriter(file, true);
             PrintWriter pw = new PrintWriter(fw);
@@ -478,7 +478,7 @@ public class MatchRoundLogic {
 
     public void recordPlayersState() {
         try {
-            File file = new File("playersState.txt");
+            File file = new File("assets/playersState.txt");
             file.delete();
             FileWriter fw = new FileWriter(file, true);
             PrintWriter pw = new PrintWriter(fw);
@@ -509,7 +509,7 @@ public class MatchRoundLogic {
 
     public void recordTilesBagState() {
         try {
-            File file = new File("tilesBagState.txt");
+            File file = new File("assets/tilesBagState.txt");
             file.delete();
             FileWriter fw = new FileWriter(file, true);
             PrintWriter pw = new PrintWriter(fw);

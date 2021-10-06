@@ -50,7 +50,7 @@ public class WordGenerator {
 
     public ArrayList<Word> fetchMatchingWords() {
         try {
-            File file = new File("dictionary.txt");
+            File file = new File("assets/dictionary.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String line = br.readLine();

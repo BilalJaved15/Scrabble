@@ -31,14 +31,14 @@ public class MainMenuGUI {
 
     public void initGUI() throws IOException {
         fr = new JFrame("Scrabble");
-        ImageIcon imgico = new ImageIcon("/assests/a-6.png");
+        ImageIcon imgico = new ImageIcon("assests/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
         hnd = new MainMenuGUIButtonHandler(this);
 
         JLabel contentPane = new JLabel();
-        contentPane.setIcon(new ImageIcon("/assets/MAINMENU.jpg"));
+        contentPane.setIcon(new ImageIcon("assets/MAINMENU.jpg"));
         contentPane.setLayout(new BorderLayout());
         contentPane.setSize(1163, 656);
         contentPane.setLocation(0, 0);
