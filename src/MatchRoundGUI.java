@@ -43,12 +43,12 @@ public class MatchRoundGUI {
         hnd = new MatchRoundGUIButtonHandler(this);
 
         fr = new JFrame("Scrabble");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("assets/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
         JLabel contentPane = new JLabel();
-        contentPane.setIcon(new ImageIcon("GAMEBOARD.png"));
+        contentPane.setIcon(new ImageIcon("assets/GAMEBOARD.png"));
         contentPane.setLayout(new BorderLayout());
         contentPane.setSize(1320, 768);
         contentPane.setLocation(0, 0);
@@ -77,18 +77,18 @@ public class MatchRoundGUI {
 
         for (int i = 0; i < 15; i++) {
             for (int j = 0; j < 15; j++) {
-                if (refBoard.get(i, j).length() == 1 && !(refBoard.get(i, j).equals("*"))){
-                    board[i][j].setText("<html>" + refBoard.get(i, j) + "<sub>" + Tile.getTileScoreByLetter(refBoard.get(i, j)) + "</sub></html>");
+                if (refBoard.get(i, j).length() == 1 && !(refBoard.get(i, j).equals("*"))) {
+                    board[i][j].setText("<html>" + refBoard.get(i, j) + "<sub>"
+                            + Tile.getTileScoreByLetter(refBoard.get(i, j)) + "</sub></html>");
                     board[i][j].setForeground(new Color(245, 226, 203));
                     board[i][j].setBackground(new Color(68, 53, 34));
-                }
-                else{
+                } else {
                     board[i][j].setText(refBoard.get(i, j));
                 }
             }
         }
 
-        if (bag.getTilesCount() == 100){
+        if (bag.getTilesCount() == 100) {
             for (int i = 0; i < players.size(); i++) {
                 bag.fillRack(players, i);
             }
@@ -101,7 +101,8 @@ public class MatchRoundGUI {
 
         for (int i = 0; i < currPlayerRack.length; i++) {
             currPlayerRack[i] = new JButton();
-            currPlayerRack[i].setText("<html>" + players.get(currPlayerPointer).rack.get(i).tileLetter + "<sub>" + players.get(currPlayerPointer).rack.get(i).tileScore + "</sub></html>");
+            currPlayerRack[i].setText("<html>" + players.get(currPlayerPointer).rack.get(i).tileLetter + "<sub>"
+                    + players.get(currPlayerPointer).rack.get(i).tileScore + "</sub></html>");
             currPlayerRack[i].setActionCommand("rack" + i);
             currPlayerRack[i].setFont(new Font("Verdana", Font.PLAIN, 17));
             currPlayerRack[i].setForeground(new Color(68, 53, 34));
@@ -196,7 +197,7 @@ public class MatchRoundGUI {
         fr.setLocationRelativeTo(null);
         fr.setVisible(true);
 
-        if (players.get(currPlayerPointer).getName().contains("(Computer)")){
+        if (players.get(currPlayerPointer).getName().contains("(Computer)")) {
             hnd.invokeBotForMove();
         }
     }

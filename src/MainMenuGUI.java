@@ -31,14 +31,14 @@ public class MainMenuGUI {
 
     public void initGUI() throws IOException {
         fr = new JFrame("Scrabble");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("/assests/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
         hnd = new MainMenuGUIButtonHandler(this);
-        
+
         JLabel contentPane = new JLabel();
-        contentPane.setIcon(new ImageIcon("MAINMENU.jpg"));
+        contentPane.setIcon(new ImageIcon("/assets/MAINMENU.jpg"));
         contentPane.setLayout(new BorderLayout());
         contentPane.setSize(1163, 656);
         contentPane.setLocation(0, 0);
@@ -62,7 +62,7 @@ public class MainMenuGUI {
         startGame.setFocusPainted(false);
         startGame.setBorderPainted(false);
         startGame.addActionListener(hnd);
-        
+
         continueGame = new JButton("Continue Last Game");
         continueGame.setFont(new Font("Verdana", Font.PLAIN, 20));
         continueGame.setBackground(new Color(68, 53, 34));
@@ -74,7 +74,7 @@ public class MainMenuGUI {
         continueGame.setFocusPainted(false);
         continueGame.setBorderPainted(false);
         continueGame.addActionListener(hnd);
-        
+
         exitGame = new JButton("Exit");
         exitGame.setFont(new Font("Verdana", Font.PLAIN, 20));
         exitGame.setBackground(new Color(68, 53, 34));
@@ -86,7 +86,7 @@ public class MainMenuGUI {
         exitGame.setFocusPainted(false);
         exitGame.setBorderPainted(false);
         exitGame.addActionListener(hnd);
-        
+
         fr.add(startGame);
         fr.add(continueGame);
         fr.add(exitGame);

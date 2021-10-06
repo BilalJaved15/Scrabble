@@ -38,8 +38,7 @@ public class TurnSelectorGUI {
             if (labels[i].getText().charAt(15) == 'L') {
                 for (int j = 0; j < labels.length; j++) {
                     if (j != i) {
-                        if (labels[j].getText().charAt(14) == 'B'
-                                && labels[j].getText().charAt(15) == 'L') {
+                        if (labels[j].getText().charAt(14) == 'B' && labels[j].getText().charAt(15) == 'L') {
                             return false;
                         }
                     }
@@ -63,7 +62,7 @@ public class TurnSelectorGUI {
         hnd = new TurnSelectorGUIButtonHandler(this);
 
         fr = new JFrame("Scrabble");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("assets/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
         fr.getContentPane().setBackground(new Color(68, 53, 34));
@@ -75,10 +74,11 @@ public class TurnSelectorGUI {
         title.setLocation(40, 0);
         title.setSize(400, 100);
 
-        desc = new JLabel("<html><center>" + "Tiles are randomly drawn from the tiles bag. " +
-                "The player with the tile closest to A gets the first turn and so on. " +
-                "A blank tile beats any letter. " +
-                "If not unique, press the shuffle button to shuffle the duplicate tiles, otherwise continue." + "</center></html>", SwingConstants.CENTER);
+        desc = new JLabel("<html><center>" + "Tiles are randomly drawn from the tiles bag. "
+                + "The player with the tile closest to A gets the first turn and so on. "
+                + "A blank tile beats any letter. "
+                + "If not unique, press the shuffle button to shuffle the duplicate tiles, otherwise continue."
+                + "</center></html>", SwingConstants.CENTER);
         desc.setHorizontalAlignment(SwingConstants.CENTER);
         desc.setVerticalAlignment(SwingConstants.CENTER);
         desc.setForeground(new Color(247, 224, 206));
@@ -99,7 +99,8 @@ public class TurnSelectorGUI {
 
         for (int i = 0; i < playerCount; i++) {
             labels[i] = new JButton();
-            labels[i].setText("<html><center>" + bag.getRandomTileLetter() + "</center><br /><center>" + players.get(i).getName() + "</center></html>");
+            labels[i].setText("<html><center>" + bag.getRandomTileLetter() + "</center><br /><center>"
+                    + players.get(i).getName() + "</center></html>");
             labels[i].setLocation(posX, posY);
             labels[i].setForeground(new Color(68, 53, 34));
             labels[i].setBackground(new Color(247, 224, 206));

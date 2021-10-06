@@ -38,7 +38,7 @@ public class ChallengeWordGUI {
         hnd = new ChallengeWordGUIButtonHandler(this, refg);
 
         fr = new JFrame("Scrabble");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("assets/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
@@ -51,8 +51,8 @@ public class ChallengeWordGUI {
         title.setLocation(40, 5);
         title.setSize(400, 100);
 
-        desc = new JLabel("<html><center>" + "The following words were created in the last turn." +
-                " Press Challenge to verify these words." + "</center></html>", SwingConstants.CENTER);
+        desc = new JLabel("<html><center>" + "The following words were created in the last turn."
+                + " Press Challenge to verify these words." + "</center></html>", SwingConstants.CENTER);
         desc.setHorizontalAlignment(SwingConstants.CENTER);
         desc.setVerticalAlignment(SwingConstants.CENTER);
         desc.setForeground(new Color(247, 224, 206));
@@ -60,7 +60,7 @@ public class ChallengeWordGUI {
         desc.setSize(470, 200);
         desc.setLocation(10, 10);
 
-        String column[] = {"Word"};
+        String column[] = { "Word" };
 
         tableModel = new DefaultTableModel(tableData, column);
 
@@ -68,10 +68,10 @@ public class ChallengeWordGUI {
         table.setBounds(10, 10, 100, 100);
         table.getTableHeader().setBackground(new Color(68, 53, 34));
         table.getTableHeader().setForeground(new Color(247, 224, 206));
-        table.getTableHeader().setFont(new  Font("Verdana", Font.BOLD, 15));
+        table.getTableHeader().setFont(new Font("Verdana", Font.BOLD, 15));
         table.setBackground(new Color(68, 53, 34));
         table.setForeground(new Color(247, 224, 206));
-        table.setFont(new  Font("Verdana", Font.PLAIN, 15));
+        table.setFont(new Font("Verdana", Font.PLAIN, 15));
         table.setPreferredScrollableViewportSize(table.getPreferredSize());
         table.setFillsViewportHeight(true);
         JScrollPane sp = new JScrollPane(table);

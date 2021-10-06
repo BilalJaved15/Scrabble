@@ -28,7 +28,7 @@ public class MainMenuGUIButtonHandler implements ActionListener {
 
     public void populateBoard(Board board) {
         try {
-            File file = new File("boardState.txt");
+            File file = new File("assets/boardState.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
 
@@ -55,7 +55,7 @@ public class MainMenuGUIButtonHandler implements ActionListener {
     public int populatePlayers(ArrayList<Player> players) {
         int currPlayerPointer = 0;
         try {
-            File file = new File("playersState.txt");
+            File file = new File("assets/playersState.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
 
@@ -97,7 +97,7 @@ public class MainMenuGUIButtonHandler implements ActionListener {
 
     public void populateTilesBag(TilesBag bag) {
         try {
-            File file = new File("tilesBagState.txt");
+            File file = new File("assets/tilesBagState.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
 
@@ -133,12 +133,11 @@ public class MainMenuGUIButtonHandler implements ActionListener {
             populateBoard(board);
             int currPlayerPointer = populatePlayers(players);
             populateTilesBag(bag);
-            MatchRoundGUI temp = new MatchRoundGUI(players, currPlayerPointer, board ,bag);
+            MatchRoundGUI temp = new MatchRoundGUI(players, currPlayerPointer, board, bag);
             temp.fr.setVisible(false);
             temp.currPlayerPointer = currPlayerPointer;
             refg.fr.setVisible(false);
             temp.fr.setVisible(true);
         }
     }
-
 }
