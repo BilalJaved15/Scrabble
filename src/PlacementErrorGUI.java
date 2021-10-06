@@ -22,16 +22,16 @@ public class PlacementErrorGUI {
 
     public PlacementErrorGUI(String errorMessage, MatchRoundGUI refg) {
         hnd = new PlacementErrorGUIButtonHandler(this, refg);
-        
+
         fr = new JFrame("Placement Error");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("assets/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
         fr.getContentPane().setBackground(new Color(68, 53, 34));
 
         errorIcon = new JLabel();
-        errorIcon.setIcon(new ImageIcon("error_icon.png"));
+        errorIcon.setIcon(new ImageIcon("assets/error_icon.png"));
         errorIcon.setLayout(new BorderLayout());
         errorIcon.setSize(64, 64);
         errorIcon.setLocation(210, 50);

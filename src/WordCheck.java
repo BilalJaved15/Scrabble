@@ -17,7 +17,7 @@ public class WordCheck {
     public static boolean isWord(String word) {
         boolean isFound = false;
         try {
-            File file = new File("dictionary.txt");
+            File file = new File("assets/dictionary.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
 

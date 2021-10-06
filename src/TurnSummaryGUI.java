@@ -4,7 +4,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.border.Border;
 
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -63,7 +62,7 @@ public class TurnSummaryGUI {
 
         fr = new JDialog();
         fr.setTitle("Scrabble");
-        ImageIcon imgico = new ImageIcon("a-6.png");
+        ImageIcon imgico = new ImageIcon("assets/a-6.png");
         fr.setIconImage(imgico.getImage());
         fr.setLayout(null);
 
@@ -76,7 +75,7 @@ public class TurnSummaryGUI {
         title.setLocation(40, 5);
         title.setSize(400, 100);
 
-        String column[] = {"Word", "Score"};
+        String column[] = { "Word", "Score" };
         table = new JTable(tableData, column);
         table.setBounds(10, 10, 100, 100);
         table.getTableHeader().setBackground(new Color(68, 53, 34));
